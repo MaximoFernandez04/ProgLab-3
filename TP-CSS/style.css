@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(75, 70, 70);
+    width: 100vw;
+    height: 2rem;
+}
+
+.blockquote__header{
+    color: white;
+    text-transform: capitalize;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.containers{
+    box-shadow:0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.titulo__propiedades__texto{
+    border-bottom: solid;
+    margin-bottom: 10px;
+}
+
+.parrafo__propiedades__texto{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.blockquote__propiedades__texto{
+    font-style: italic;
+    color: #777;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    border-left: 5px solid #ddd;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+/* PROPIEDADES DE CAJA */
+.titulo__propiedades__caja{
+    border-bottom: solid;
+    margin-bottom: 10px;
+}
+
+.propiedades__caja1{
+    box-shadow:10px 5px 15px -2px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-width:1px;
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+.propiedades__caja2{
+    box-shadow:10px 5px 15px -2px rgba(0, 0, 0, 0.5);
+    border: solid;
+    background-color: rgb(232, 169, 146);
+    border-width:1px;
+    padding: 0.8rem;
+    margin-top: .5rem;
+    border-radius: 5px;
+}
+
+.posiciones__caja1{
+    position: relative;
+    background-color: aquamarine;
+    width: 50%;
+}
+
+.posiciones__caja2{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 20%;
+    left: 60%;
+    top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .blockquote__header{
+        color: red;
+
+    }
+    
+}
+
+.grid__elemento{
+    background-color: rgb(86, 86, 164);
+    text-align: center;
+
+
+}
+
+.grid__elemento p {
+    color: white;
+}
+.containers__grid{
+    box-shadow:0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 0.2rem;
+}
+
+.principio__animaciones{
+    border-bottom: solid;
+    margin-bottom: 10px;
+}
+
+.caja1__animacion{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.caja1__animacion:hover{
+    background-color: green;
+    transition: 1s;
+}
+
+.caja2__animacion{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    border-radius: 100%;
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(100px);
+      }
+}
